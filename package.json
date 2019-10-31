@@ -1,0 +1,40 @@
+{
+  "name": "dplyr",
+  "version": "1.0.0",
+  "description": "An Identity contract solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyrabbitLTC/dplyr.git"
+  },
+  "keywords": [
+    "ethereum",
+    "identity"
+  ],
+  "author": "Dennison Bertram (dennison@dennisonbertram.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crazyrabbitLTC/dplyr/issues"
+  },
+  "homepage": "https://github.com/crazyrabbitLTC/dplyr#readme",
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "chai": "^4.2.0",
+    "husky": "^3.0.9",
+    "mocha": "^6.2.2",
+    "prettier": "^1.18.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34",
+    "solhint": "^2.3.0",
+    "solhint-plugin-prettier": "0.0.3"
+  },
+  "husky": {
+    "hooks": {
+       "pre-push": "npm run prettier:solidity"
+    }
+  }
+}
