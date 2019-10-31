@@ -1,5 +1,5 @@
 // Import all required modules from openzeppelin-test-helpers
-const {BN, constants, expectEvent, expectRevert} = require('@openzeppelin/test-helpers');
+const {BN, constants, expectEvent, expectRevert} = require("@openzeppelin/test-helpers");
 
 const {expect} = require("chai");
 
