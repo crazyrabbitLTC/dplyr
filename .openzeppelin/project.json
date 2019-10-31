@@ -1,7 +1,19 @@
 {
   "manifestVersion": "2.2",
-  "contracts": {},
+  "contracts": {
+    "ExecuteCall": "ExecuteCall",
+    "Identity": "Identity",
+    "Metadata": "Metadata",
+    "IdentityFactory": "IdentityFactory"
+  },
   "dependencies": {},
   "name": "DPLYR",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "compiler": {
+    "manager": "openzeppelin",
+    "solcVersion": "0.5.12",
+    "compilerSettings": {
+      "optimizer": {}
+    }
+  }
 }
